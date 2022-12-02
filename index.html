@@ -93,7 +93,7 @@
     </section>
     <section class="indicators">
       <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Логотип дизайн-студии Nёrd's" />
-      <p>с 2004 года Любим точность во всем:</p>
+      <p class="list-header">с 2004 года Любим точность во всем:</p>
       <ul>
         <li>
           <p class="numbers">146<span>%</span></p>
@@ -135,7 +135,7 @@
       </ul>
     </section>
   </main>
-  
+
   <footer>
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <!-- Здесь будет карта -->
@@ -170,23 +170,29 @@
 
   <section class="feedback">
     <h2>Напишите нам</h2>
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <p>
-        <label for="feedback-name">Ваше имя:</label>
-        <input id="feedback-name" name="name" placeholder="Имя Фамилия" />
-      </p>
-      <p>
-        <label for="feedback-email">Ваш email:</label>
-        <input id="feedback-email" type="email" name="email" placeholder="email@example.com " />
-      </p>
-      <p>
-        <label for="feedback-text">Текст письма:</label>
-        <input id="feedback-text" name="text" placeholder="В свободной форме" />
-      </p>
-      <button class="button" type="submit">ОТПРАВИТЬ</button>
+    <form class="write-form" action="https://echo.htmlacademy.ru/" method="post">
+      <div class="wrap-user">
+        <p class="user-item">
+          <label for="user-name">Ваше имя:</label>
+          <input id="user-name" type="text" name="name" placeholder="Имя Фамилия" />
+        </p>
+        <p class="user-item">
+          <label for="user-email">Ваш email:</label>
+          <input id="user-email" type="email" name="email" placeholder="email@example.com" />
+        </p>
+        <p class="user-item item-letter">
+          <label for="letter-text">Текст письма:</label>
+          <textarea id="letter-text" name="letter" placeholder="В свободной форме"></textarea>
+        </p>
+      </div>
+      <button class="button" type="submit" aria-label="Отправить письмо дизайн-студии">
+        Отправить
+      </button>
     </form>
-    <button type="button">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>
+
